@@ -16,7 +16,7 @@ You can use Markdown most places around GitHub:
 
 * [Gists](https://gist.github.com)
 * Comments in Issues and Pull Requests
-* Files with the .md or .markdown extension
+* Files with the `.md` or `.markdown` extension
 
 For more information, see “[Writing on GitHub](https://help.github.com/en/github/writing-on-github)” in the GitHub Help.
 
