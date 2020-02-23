@@ -176,7 +176,7 @@ Typing an `@` symbol, followed by a username, will notify that person to come an
 
 ### Automatic linking for URLs
 
-Any URL (like http://www.github.com/) will be automatically converted into a clickable link.
+Any URL (like `http://www.github.com/`) will be automatically converted into a clickable link.
 
 Strikethrough
 
