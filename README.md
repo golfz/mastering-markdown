@@ -24,20 +24,21 @@ For more information, see “[Writing on GitHub](https://help.github.com/en/gith
 Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com or in your own text files.
 
 ### Headers
+
+# This is an `<h1>` tag
 ```
 # This is an <h1> tag
 ```
-# This is an `<h1>` tag
 
+## This is an `<h2>` tag
 ```
 ## This is an <h2> tag
 ```
-## This is an `<h2>` tag
 
+###### This is an `<h6>` tag
 ```
 ###### This is an <h6> tag
 ```
-###### This is an `<h6>` tag
 
 ### Emphasis
 ```
