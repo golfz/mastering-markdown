@@ -29,17 +29,32 @@ Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com 
 ## This is an <h2> tag
 ###### This is an <h6> tag
 ```
+✳️ Result
+# This is an `<h1>` tag
+## This is an `<h2>` tag
+###### This is an `<h6>` tag
 
 ### Emphasis
 ```
-*This text will be italic*
-_This will also be italic_
+*This text will be italic with star*
+_This will also be italic with underscore_
 
-**This text will be bold**
-__This will also be bold__
+**This text will be bold with star**
+__This will also be bold with underscore__
 
 _You **can** combine them_
 ```
+✳️ Result
+
+*This text will be italic with star*
+
+_This will also be italic with underscore_
+
+**This text will be bold with star**
+
+__This will also be bold with underscore__
+
+_You **can** combine them_
 
 ### Lists
 
@@ -59,17 +74,38 @@ _You **can** combine them_
    1. Item 3b
 ```
 
-### Images
-```
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
-```
+✳️ Result
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
+  
+1. Item 1
+2. Item 2
+3. Item 3
+   1. Item 3a
+   1. Item 3b 
+
 
 ### Links
 ```
 http://github.com - automatic!
 [GitHub](http://github.com)
 ```
+✳️ Result
+
+http://github.com - automatic!
+
+[GitHub](http://github.com)
+
+### Images
+```
+![GitHub Logo](https://i.pinimg.com/originals/c5/64/52/c56452bb4183e0a68bdef2031ed84754.png)
+Format: ![Alt Text](url)
+```
+✳️ Result
+
+![GitHub Logo](https://i.pinimg.com/originals/c5/64/52/c56452bb4183e0a68bdef2031ed84754.png)
 
 ### Blockquotes
 ```
@@ -78,6 +114,8 @@ As Kanye West said:
 > We're living the future so
 > the present is our past.
 ```
+✳️ Result
+
 As Kanye West said:
 
 > We're living the future so
@@ -89,6 +127,10 @@ As Kanye West said:
 I think you should use an
 `<addr>` element here instead.
 ```
+✳️ Result
+
+I think you should use an
+`<addr>` element here instead.
 
 ## GitHub Flavored Markdown
 GitHub.com uses its own version of the Markdown syntax that provides an additional set of useful features, many of which make it easier to work with content on GitHub.com.
@@ -108,7 +150,24 @@ function fancyAlert(arg) {
 ```
 ````
 
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
+
 You can also simply indent your code by four spaces:
+````
+```javascript
+    function fancyAlert(arg) {
+      if(arg) {
+        $.facebox({div:'#foo'})
+      }
+    }
+```
+````
 ```javascript
     function fancyAlert(arg) {
       if(arg) {
@@ -118,6 +177,14 @@ You can also simply indent your code by four spaces:
 ```
 
 Here’s an example of Python code without syntax highlighting:
+````
+```
+def foo():
+    if not bar:
+        return True
+```
+````
+
 ```
 def foo():
     if not bar:
@@ -131,6 +198,11 @@ def foo():
 - [x] this is a complete item
 - [ ] this is an incomplete item
 ```
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
 
 If you include a task list in the first comment of an Issue, you will get a handy progress indicator in your issue list. It also works in Pull Requests!
 
@@ -160,6 +232,9 @@ Any reference to a commit’s [SHA-1 hash](https://en.wikipedia.org/wiki/SHA-1) 
 mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 ```
+16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 
 ### Issue references within a repository
 
@@ -170,13 +245,17 @@ mojombo#1
 mojombo/github-flavored-markdown#1
 ```
 
+#1
+mojombo#1
+mojombo/github-flavored-markdown#1
+
 ### Username @mentions
 
 Typing an `@` symbol, followed by a username, will notify that person to come and view the comment. This is called an “@mention”, because you’re mentioning the individual. You can also @mention teams within an organization.
 
 ### Automatic linking for URLs
 
-Any URL (like `http://www.github.com/`) will be automatically converted into a clickable link.
+Any URL (like `http://www.github.com/` http://www.github.com/) will be automatically converted into a clickable link.
 
 Strikethrough
 
