@@ -26,12 +26,17 @@ Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com 
 ### Headers
 ```
 # This is an <h1> tag
+```
+# This is an `<h1>` tag
+
+```
 ## This is an <h2> tag
+```
+## This is an `<h2>` tag
+
+```
 ###### This is an <h6> tag
 ```
-✳️ Result
-# This is an `<h1>` tag
-## This is an `<h2>` tag
 ###### This is an `<h6>` tag
 
 ### Emphasis
@@ -44,7 +49,6 @@ __This will also be bold with underscore__
 
 _You **can** combine them_
 ```
-✳️ Result
 
 *This text will be italic with star*
 
@@ -65,6 +69,11 @@ _You **can** combine them_
   * Item 2a
   * Item 2b
 ```
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
+  
 #### Ordered
 ```
 1. Item 1
@@ -73,27 +82,17 @@ _You **can** combine them_
    1. Item 3a
    1. Item 3b
 ```
-
-✳️ Result
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
-  
 1. Item 1
 2. Item 2
 3. Item 3
    1. Item 3a
    1. Item 3b 
 
-
 ### Links
 ```
 http://github.com - automatic!
 [GitHub](http://github.com)
 ```
-✳️ Result
-
 http://github.com - automatic!
 
 [GitHub](http://github.com)
@@ -103,8 +102,6 @@ http://github.com - automatic!
 ![GitHub Logo](https://i.pinimg.com/originals/c5/64/52/c56452bb4183e0a68bdef2031ed84754.png)
 Format: ![Alt Text](url)
 ```
-✳️ Result
-
 ![GitHub Logo](https://i.pinimg.com/originals/c5/64/52/c56452bb4183e0a68bdef2031ed84754.png)
 
 ### Blockquotes
@@ -114,8 +111,6 @@ As Kanye West said:
 > We're living the future so
 > the present is our past.
 ```
-✳️ Result
-
 As Kanye West said:
 
 > We're living the future so
@@ -127,8 +122,6 @@ As Kanye West said:
 I think you should use an
 `<addr>` element here instead.
 ```
-✳️ Result
-
 I think you should use an
 `<addr>` element here instead.
 
@@ -232,9 +225,6 @@ Any reference to a commit’s [SHA-1 hash](https://en.wikipedia.org/wiki/SHA-1) 
 mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 ```
-16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 
 ### Issue references within a repository
 
