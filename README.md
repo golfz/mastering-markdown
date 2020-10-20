@@ -104,6 +104,7 @@ http://github.com - automatic!
 Format: ![Alt Text](url)
 ```
 ![GitHub Logo](https://i.pinimg.com/originals/c5/64/52/c56452bb4183e0a68bdef2031ed84754.png)
+> We can use relative path as url
 
 ### Blockquotes
 ```
